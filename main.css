@@ -1,0 +1,33 @@
+.home-page {
+    background-image: 
+    linear-gradient(-135deg, #ee000080, #ffffff80),
+    url('images/main-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+body {
+    background-color: white;
+}
+.right-align {
+    float: right;
+}
+.header {
+    text-decoration: none;
+    color: black;
+    text-shadow: 2px 2px 1px white;
+    font-size: 5vh;
+    font-family: 'Verdana';
+    font-weight: bolder;
+    padding: 5px;
+}
+.header:hover {
+    color: red;
+    transition-duration: .25s;
+}
+
+.under-construction a {
+    color: black;
+}
