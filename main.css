@@ -134,6 +134,9 @@ footer {
 footer div a {
     color: white;
 }
+footer div a:hover {
+    color: black;
+}
 a:hover {
     color: red;
 }
