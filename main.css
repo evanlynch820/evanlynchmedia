@@ -1,18 +1,85 @@
+html {
+    scroll-behavior: smooth;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    height: 100%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.link {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    padding: .4em;
+    margin: -.4em;
+}
 .home-page {
+    width: auto;
+    height: 100vh;
     background-image: 
-    linear-gradient(-135deg, #ee000080, #ffffff80),
+    linear-gradient(-135deg, #ee00009b, #ffffff9e),
     url('images/main-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
 }
-
 body {
     background-color: white;
+    margin: 0;
 }
-.right-align {
-    float: right;
+h1 {
+    font-family: 'Verdana';
+    font-size: 12vh;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    border-style: solid;
+    border-width: 1vh;
+    border-radius: 20px;
+    border-color: white;
+}
+h2 {
+    font-family: 'Verdana';
+    font-size: 3vh;
+    padding: 1vh 3vh;
+    text-align: center;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    border-style: solid;
+    border-width: .5vh;
+    border-radius: 100px;
+    border-color: white;
+    background-color: transparent;
+}
+h2:hover {
+    background-color: white;
+    transition-duration: .5s;
+}
+h2 .link:hover {
+    color: red;
+    transition-duration: .5s;
+}
+.horizontal-align {
+    float: left;
+}
+.top-bar {
+    background-color: rgba(255, 0, 0, 0.5);
+    padding-bottom: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 8vh;
+    z-index: 1;
 }
 .header {
     text-decoration: none;
@@ -24,10 +91,49 @@ body {
     padding: 5px;
 }
 .header:hover {
-    color: red;
-    transition-duration: .25s;
+    color: white;
+    text-shadow: 3px 3px 1px red;
+    transition-duration: .5s;
 }
-
-.under-construction a {
-    color: black;
+div img.nav-logo {
+    margin-top: 1.2vh;
+    margin-right: 2vh;
+    float: right;
+    top: 1.5vh;
+    right: 1.25vh;
+    height: 5vh;
+    width: auto;
+}
+.learn-more {
+    height: 100vh;
+    width: auto;
+    padding-top: 6vh;
+    position: relative;
+    padding-bottom: 6rem;
+}
+h3 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 6vh;
+}
+.about-me {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin-top: -2vh;
+    padding-bottom: 2vw;
+}
+footer {
+    background-color: red;
+    color: white;
+    text-align: center;
+    height: 20vh;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+footer div a {
+    color: white;
+}
+a:hover {
+    color: red;
 }
